@@ -207,11 +207,6 @@ header {
   fill: currentColor;
 }
 
-/* Main Content */
-main {
-  padding: 1rem 0;
-}
-
 /* Hero Index Container */
 .hero-index-container {
   display: flex;
