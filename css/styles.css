@@ -59,6 +59,24 @@ header {
   font-weight: bold;
 }
 
+/* Menu Burger*/
+
+.hamburger .line {
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+/* When toggled: */
+.hamburger.active .top {
+  transform: translateX(-4px) translateY(5px) rotate(45deg);
+}
+.hamburger.active .middle {
+  opacity: 0;
+}
+.hamburger.active .bottom {
+  transform: translateX(-4px) translateY(-5px) rotate(-45deg);
+}
+
 /* Menu toggle button */
 #menu-toggle {
   background: none;

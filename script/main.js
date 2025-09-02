@@ -68,3 +68,13 @@ window.addEventListener('DOMContentLoaded', () => {
   // Show all courses by default
   filterCourses('all');
 });
+
+// Menu burger toggle close and open 
+  const menuToggle = document.getElementById('menu-toggle');
+  const hamburger = menuToggle.querySelector('.hamburger');
+   
+  menuToggle.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !expanded);
+  });
