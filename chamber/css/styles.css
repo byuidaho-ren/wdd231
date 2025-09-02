@@ -1,9 +1,10 @@
 /* Root colors and fonts */
 :root {
-  --primary-color: #B435A0;
-  --secondary-color: #D87BC2;
-  --background-color: #F9F5FB;
-  --text-color: #2C2C2C;
+  --primary-color: #078b45;         /* Vibrant Green */
+  --secondary-color: #65c18c;       /* Soft Green / Mint */
+  --background-color: #f3faf5;      /* Very light greenish-white */
+  --text-color: #1e2e23;            /* Deep greenish-black for readability */
+  --accent-color: #0ba360;          /* Accent green for highlights */
   --font-family: 'Roboto', sans-serif;
 }
 
