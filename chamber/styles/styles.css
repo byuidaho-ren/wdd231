@@ -228,7 +228,20 @@ footer {
 
     button {
       cursor: pointer;
+        border: 1px solid #dddddd; 
+  border-radius: 4px;
     }
+input#searchInput {
+   width: 100%;
+   padding: 25px 15px;
+   border: 1px solid #dddddd; 
+  border-radius: 4px;
+}
+svg.icon.grid-icon {
+    position: relative;
+    top:5px;
+    left: 4px;
+}
     #members {
       display: flex;
       flex-wrap: wrap;
