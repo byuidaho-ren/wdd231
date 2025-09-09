@@ -85,8 +85,24 @@
   <main class="container">
     <section>
         <h1>Chamber Members</h1>
-    <button id="listBtn">List View</button>
-    <button id="gridBtn">Grid View</button>
+
+    <button id="listBtn"> 
+      <!-- List Icon (3 horizontal lines) -->
+      <svg class="icon list-icon" viewBox="0 0 24 24" width="40" height="40">
+      <rect x="4" y="5" width="16" height="2" />
+      <rect x="4" y="11" width="16" height="2" />
+      <rect x="4" y="17" width="16" height="2" />
+    </svg>
+   </button>
+    <button id="gridBtn">
+        <!-- Grid Icon (2x2 grid) -->
+    <svg class="icon grid-icon" viewBox="0 0 24 24" width="40" height="40">
+      <rect x="3" y="3" width="6" height="6" />
+      <rect x="10" y="3" width="6" height="6" />
+      <rect x="3" y="10" width="6" height="6" />
+      <rect x="10" y="10" width="6" height="6" />
+    </svg>
+    </button>
     <input 
      type="search" 
      id="searchInput" 
