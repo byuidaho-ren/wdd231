@@ -286,8 +286,10 @@ article.member-card {
 
 
     .grid-view .member-image {
-      width: 100px;
-      height: 100px;
+      width: 100%;
+      height: auto;
+      min-height: 180px;
+      max-height: 250px;
       margin-bottom: 0.5rem;
     }
 
