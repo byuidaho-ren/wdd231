@@ -316,6 +316,19 @@ article.member-card {
     .member-level-2 { background: silver; color: #222; } /* silver */
     .member-level-3 { background: gold; color: #222; } /* gold */
 
+.icon-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+input#searchInput {
+   
+    
+}
 
 
 /* ============================
