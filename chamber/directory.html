@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Directory - Renniel D Fernandez | WDD231 Project</title>
+  <title>Renniel D Fernandez | WDD231 Project</title>
+  <meta name="author" content="Renniel D Fernandez">
   <meta name="description" content="BS in Software Development at BYU–Idaho via BYU Pathway. Passionate about web, mobile, and desktop development." />
-  <link rel="stylesheet" href="css/slider.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/favicon.ico">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-  <!-- Open Graph (for better social sharing) -->
-  <meta property="og:title" content="Renniel D Fernandez | WDD231 Project" />
-  <meta property="og:description" content="BS Software Development at BYU–Idaho via Pathway. Web, desktop, mobile dev." />
-  <meta property="og:image" content="https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg" />
-  <meta property="og:url" content="https://yourwebsite.com" />
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ https://yourwebsite.com/page-url }}" />
+  <meta property="og:title" content="{{ Your Page Title }}" />
+  <meta property="og:description" content="{{ A short description of the page }}" />
+  <meta property="og:image" content="{{ https://yourwebsite.com/image.jpg }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="{{ Your Site Name }}" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="{{ https://yourwebsite.com/page-url }}" />
+  <meta name="twitter:title" content="{{ Your Page Title }}" />
+  <meta name="twitter:description" content="{{ A short description of the page }}" />
+  <meta name="twitter:image" content="{{ https://yourwebsite.com/image.jpg }}" />
+  <meta name="twitter:site" content="@YourTwitterHandle" />
+  <meta name="twitter:creator" content="@YourTwitterHandle" />
+
+  <!-- Apple Meta Tags -->
+  <meta name="apple-mobile-web-app-title" content="{{ Your App or Site Name }}">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="{{ https://yourwebsite.com/apple-touch-icon.png }}" />
+  <link rel="mask-icon" href="{{ https://yourwebsite.com/safari-pinned-tab.svg }}" color="#5bbad5">
+
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="{{ https://yourwebsite.com/mstile-144x144.png }}">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Canonical
+  <link rel="canonical" href="{{ https://yourwebsite.com/page-url }}" />
+ -->
+
 </head>
 
-<body>
+<body class="list-view">
+
   <header>
     <div class="nav-wrapper">
-      <div class="logo">Dasmarinas City | Chamber of Commerce</div>
+      <div class="logo">Cavite Chamber of Commerce</div>
       <button id="menu-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation menu">
         <svg class="hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect class="line top" y="4" width="24" height="2" fill="currentColor"/>
@@ -41,11 +79,29 @@
         <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
+
   </header>
 
   <main class="container">
+    <section>
+        <h1>Chamber Members</h1>
+    <button id="listBtn">List View</button>
+    <button id="gridBtn">Grid View</button>
+    <input 
+     type="search" 
+     id="searchInput" 
+     placeholder="Search members..." 
+     aria-label="Search members"
+     style="margin-top: 1rem; padding: 0.5rem; width: 300px;"
+    />
+
+    </section>
+
    
-  </main>
+	  <section id="members" aria-live="polite" aria-label="Chamber Members List">
+      <!-- Members will be rendered here -->
+    </section>
+</main>
 
 
   <footer>

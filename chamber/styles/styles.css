@@ -224,9 +224,115 @@ footer {
   margin-top: 2rem;
 }
 
+/* Directory Page Lists */
+
+    button {
+      margin-right: 1rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    #members {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .member-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      transition: transform 0.2s ease;
+    }
+    .member-card:hover {
+      transform: translateY(-4px);
+    }
+    .member-image {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #eee;
+      border: 1px solid #ddd;
+    }
+    .member-info {
+      flex-grow: 1;
+    }
+    .member-info h2 {
+      margin: 0 0 0.3rem 0;
+      font-size: 1.2rem;
+    }
+    .member-info p {
+      margin: 0.2rem 0;
+      font-size: 0.9rem;
+    }
+    /* Grid view */
+    .grid-view #members {
+      flex-wrap: wrap;
+    }
+article.member-card {
+   overflow: scroll; 
+}
+.grid-view .member-card {
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+
+    .grid-view .member-image {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* List view */
+    .list-view #members {
+      flex-direction: column;
+    }
+    .list-view .member-card {
+      flex-direction: row;
+      width: 100%;
+    }
+
+    /* Membership badges */
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: white;
+      margin-top: 0.3rem;
+    }
+    .member-level-1 { background: #888; } /* member */
+    .member-level-2 { background: silver; color: #222; } /* silver */
+    .member-level-3 { background: gold; color: #222; } /* gold */
+
+
+
 /* ============================
    MEDIA QUERIES (BOTTOM)
 ============================ */
+
+/* List Directory Page 2 columns on small screens */
+@media (min-width: 600px) {
+  .grid-view .member-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+/* List Directory Page 3 columns on medium and larger screens */
+@media (min-width: 900px) {
+  .grid-view .member-card {
+    width: calc(33.333% - 1rem);
+  }
+}
 
 /* Tablet & Up */
 @media (min-width: 768px) {

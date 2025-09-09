@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Streamtech Systems Technologies, Inc.",
+    "address": "World Wide Corporate Center, Mandaluyong City, Metro Manila, Philippines",
+    "phone": "(02) 8888-8888",
+    "website": "https://www.streamtech.com.ph",
+    "image": "https://via.placeholder.com/300x200?text=Streamtech",
+    "membershipLevel": 3,
+    "description": "Leading provider of fiber broadband internet and cable TV services.",
+    "email": "support@streamtech.com.ph"
+  },
+  {
+    "name": "SM City Tanza",
+    "address": "Antero Soriano Hwy, Tanza, Cavite, 4108 Philippines",
+    "phone": "(046) 483-7000",
+    "website": "http://www.smsupermalls.com",
+    "image": "sm-city-tanza.webp",
+    "membershipLevel": 2,
+    "description": "Major shopping mall with over 200 retail stores and dining options.",
+    "email": "info@smcitytanza.com"
+  },
+  {
+    "name": "Citymall Imus",
+    "address": "30 Anabu Rd, Imus, Cavite, Philippines",
+    "phone": "(046) 471-5000",
+    "website": "https://www.citymallimus.com.ph",
+    "image": "citymall-imus.webp",
+    "membershipLevel": 1,
+    "description": "Community mall featuring retail shops and cinemas.",
+    "email": "contact@citymallimus.com.ph"
+  },
+  {
+    "name": "SM City Molino",
+    "address": "Molino - Paliparan Rd, Bacoor, Cavite, 641001 Philippines",
+    "phone": "(046) 482-4000",
+    "website": "https://www.smsupermalls.com/mall-directory/sm-city-molino",
+    "image": "sm-city-molino.webp",
+    "membershipLevel": 3,
+    "description": "Two-level mall with 100+ stores and various dining choices.",
+    "email": "info@smcitymolino.com"
+  },
+  {
+    "name": "Golden Circle Realty",
+    "address": "Gen. Aguinaldo Hwy, Bacoor, Cavite, Philippines",
+    "phone": "(046) 484-5555",
+    "website": "http://www.goldencircle.com.ph",
+    "image": "https://via.placeholder.com/300x200?text=Streamtech",
+    "membershipLevel": 2,
+    "description": "Trusted real estate and property development company.",
+    "email": "info@goldencircle.com.ph"
+  },
+  {
+    "name": "Cavite Dental Clinic",
+    "address": "Alapan 1, Imus, Cavite, Philippines",
+    "phone": "(046) 471-7001",
+    "website": "https://cavitedentalclinic.ph",
+    "image": "https://via.placeholder.com/300x200?text=Streamtech",
+    "membershipLevel": 1,
+    "description": "Comprehensive dental care and oral health services.",
+    "email": "contact@cavitedentalclinic.ph"
+  },
+  {
+    "name": "Southstar Drug",
+    "address": "Poblacion, Dasmariñas, Cavite, Philippines",
+    "phone": "(046) 416-1234",
+    "website": "https://www.southstardrug.com.ph",
+    "image": "https://via.placeholder.com/300x200?text=Streamtech",
+    "membershipLevel": 3,
+    "description": "Leading drugstore chain offering pharmaceutical products.",
+    "email": "support@southstardrug.com.ph"
+  }
+]
