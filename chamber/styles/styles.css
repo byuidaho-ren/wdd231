@@ -20,10 +20,11 @@ body {
   color: var(--text-color);
   line-height: 1.6;
 }
+
 section {
-    margin-top: 25px;
-    margin-bottom: 25px;
+  margin: 25px 0;
 }
+
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -60,14 +61,13 @@ header {
   font-weight: bold;
 }
 
-/* Menu Burger*/
+/* Hamburger Menu */
 
 .hamburger .line {
   transition: all 0.3s ease-in-out;
   transform-origin: center;
 }
 
-/* When toggled: */
 .hamburger.active .top {
   transform: translateX(-4px) translateY(5px) rotate(45deg);
 }
@@ -112,9 +112,8 @@ header {
 
 .menu li a:hover,
 .menu li a:focus {
-  background-color: var(--secondary-color);
+  background-color: #fff; /* Overwrites previous background-color */
   color: var(--primary-color);
-  background-color: #fff;
   outline: none;
 }
 
@@ -133,7 +132,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: unset !important;
+  margin: 0 !important;
 }
 
 .hero-img {
@@ -146,7 +145,6 @@ header {
   object-fit: cover;
   object-position: center;
   z-index: 1;
-  display: block;
 }
 
 .hero-overlay {
@@ -175,9 +173,6 @@ header {
 
 .hero p {
   font-size: 1rem;
-}
-
-.hero-content p {
   margin: 0 auto;
   width: 60%;
 }
@@ -213,7 +208,6 @@ main {
   padding: 1rem 0;
 }
 
-
 /* Footer */
 footer {
   background-color: var(--primary-color);
@@ -226,68 +220,77 @@ footer {
 
 /* Directory Page Lists */
 
-    button {
-      cursor: pointer;
-        border: 1px solid #dddddd; 
+button {
+  cursor: pointer;
+  border: 1px solid #ddd;
   border-radius: 4px;
-    }
+}
+
 input#searchInput {
-   width: 100%;
-   padding: 15px 15px;
-   border: 1px solid #dddddd; 
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
+
 svg.icon.grid-icon {
-    position: relative;
-    top:5px;
-    left: 4px;
+  position: relative;
+  top: 5px;
+  left: 4px;
 }
-    #members {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .member-card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-      padding: 1rem;
-      width: 100%;
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      transition: transform 0.2s ease;
-    }
-    .member-card:hover {
-      transform: translateY(-4px);
-    }
-    .member-image {
-      flex-shrink: 0;
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-      border-radius: 8px;
-      background: #eee;
-      border: 1px solid #ddd;
-    }
-    .member-info {
-      flex-grow: 1;
-    }
-    .member-info h2 {
-      margin: 0 0 0.3rem 0;
-      font-size: 1.2rem;
-    }
-    .member-info p {
-      margin: 0.2rem 0;
-      font-size: 0.9rem;
-    }
-    /* Grid view */
-    .grid-view #members {
-      flex-wrap: wrap;
-    }
-article.member-card {
-   overflow: scroll; 
+
+#members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
+.member-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: transform 0.2s ease;
+  overflow: auto; /* Replaces article.member-card overflow: scroll */
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+}
+
+.member-image {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+
+.member-info {
+  flex-grow: 1;
+}
+
+.member-info h2 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+}
+
+.member-info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+/* Grid view */
+.grid-view #members {
+  flex-wrap: wrap;
+}
+
 .grid-view .member-card {
   flex-direction: column;
   width: 100%;
@@ -295,72 +298,70 @@ article.member-card {
   align-items: center;
 }
 
+.grid-view .member-image {
+  width: 100%;
+  height: auto;
+  min-height: 180px;
+  max-height: 250px;
+  margin-bottom: 0.5rem;
+}
 
-    .grid-view .member-image {
-      width: 100%;
-      height: auto;
-      min-height: 180px;
-      max-height: 250px;
-      margin-bottom: 0.5rem;
-    }
+/* List view */
+.list-view #members {
+  flex-direction: column;
+}
 
-    /* List view */
-    .list-view #members {
-      flex-direction: column;
-    }
-    .list-view .member-card {
-      flex-direction: row;
-      width: 100%;
-    }
+.list-view .member-card {
+  flex-direction: row;
+  width: 100%;
+}
 
-    /* Membership badges */
-    .badge {
-      display: inline-block;
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.75rem;
-      font-weight: bold;
-      color: white;
-      margin-top: 0.3rem;
-    }
-    .member-level-1 { background: #888; } /* member */
-    .member-level-2 { background: silver; color: #222; } /* silver */
-    .member-level-3 { background: gold; color: #222; } /* gold */
+/* Membership badges */
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 0.3rem;
+}
+
+.member-level-1 { background: #888; }
+.member-level-2 {
+  background: silver;
+  color: #222;
+}
+.member-level-3 {
+  background: gold;
+  color: #222;
+}
 
 .icon-container {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-
-input#searchInput {
-   
-    
-}
-
 
 /* ============================
-   MEDIA QUERIES (BOTTOM)
+   MEDIA QUERIES
 ============================ */
 
-/* List Directory Page 2 columns on small screens */
+/* Small screens (600px+) */
 @media (min-width: 600px) {
   .grid-view .member-card {
     width: calc(50% - 1rem);
   }
 }
 
-/* List Directory Page 3 columns on medium and larger screens */
+/* Medium and larger screens (900px+) */
 @media (min-width: 900px) {
   .grid-view .member-card {
     width: calc(33.333% - 1rem);
   }
 }
 
-/* Tablet & Up */
+/* Tablet & Up (768px+) */
 @media (min-width: 768px) {
   header {
     display: flex;
@@ -399,10 +400,7 @@ input#searchInput {
     flex-direction: row;
   }
 
-  .hero-index-col-1 {
-    width: 25%;
-  }
-
+  .hero-index-col-1,
   .hero-index-col-2 {
     width: 25%;
   }
