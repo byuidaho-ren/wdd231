@@ -55,7 +55,7 @@
   display: block;
   margin: 30px auto;
   padding: 10px 20px;
-  background: #007BFF;
+  background:  #078b45;
   color: white;
   border: none;
   border-radius: 4px;
@@ -64,5 +64,5 @@
 }
 
 .event-module-load-button:hover {
-  background: #0056b3;
+  background:  #057338; 
 }
