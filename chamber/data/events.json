@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Music Concert",
+    "date": "2025-10-01",
+    "location": "New York",
+    "description": "Enjoy live music with top artists.",
+    "featuredImage": "music.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tech Conference",
+    "date": "2025-10-05",
+    "location": "San Francisco",
+    "description": "Explore innovations in AI and robotics.",
+    "featuredImage": "tech.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Art Expo",
+    "date": "2025-10-10",
+    "location": "Los Angeles",
+    "description": "Modern art from global artists.",
+    "featuredImage": "arts.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Food Festival",
+    "date": "2025-10-12",
+    "location": "Chicago",
+    "description": "Taste world cuisine at one place.",
+    "featuredImage": "foods.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Film Screening",
+    "date": "2025-10-15",
+    "location": "Austin",
+    "description": "Premiere of indie and classic films.",
+    "featuredImage": "https://via.placeholder.com/400x200?text=Film+Screening"
+  },
+  {
+    "id": 6,
+    "title": "Startup Meetup",
+    "date": "2025-10-18",
+    "location": "Boston",
+    "description": "Pitch ideas and connect with investors.",
+    "featuredImage": "https://via.placeholder.com/400x200?text=Startup+Meetup"
+  },
+  {
+    "id": 7,
+    "title": "Book Fair",
+    "date": "2025-10-20",
+    "location": "Seattle",
+    "description": "Browse thousands of books and meet authors.",
+    "featuredImage": "https://via.placeholder.com/400x200?text=Book+Fair"
+  },
+  {
+    "id": 8,
+    "title": "Charity Run",
+    "date": "2025-10-22",
+    "location": "Denver",
+    "description": "Run for a cause and stay fit.",
+    "featuredImage": "https://via.placeholder.com/400x200?text=Charity+Run"
+  },
+  {
+    "id": 9,
+    "title": "Photography Workshop",
+    "date": "2025-10-25",
+    "location": "Miami",
+    "description": "Improve your skills with pro photographers.",
+    "featuredImage": "https://via.placeholder.com/400x200?text=Photography+Workshop"
+  },
+  {
+    "id": 10,
+    "title": "Yoga Retreat",
+    "date": "2025-10-28",
+    "location": "Sedona",
+    "description": "Relax and rejuvenate in nature.",
+    "featuredImage": "https://via.placeholder.com/400x200?text=Yoga+Retreat"
+  },
+  {
+    "id": 11,
+    "title": "Dance Competition",
+    "date": "2025-10-30",
+    "location": "Las Vegas",
+    "description": "Watch talented dancers battle it out.",
+    "featuredImage": "https://via.placeholder.com/400x200?text=Dance+Competition"
+  },
+  {
+    "id": 12,
+    "title": "Gaming Expo",
+    "date": "2025-11-02",
+    "location": "Orlando",
+    "description": "Experience the future of gaming tech.",
+    "featuredImage": "https://via.placeholder.com/400x200?text=Gaming+Expo"
+  }
+]
