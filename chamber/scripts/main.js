@@ -29,3 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
    });
 
   });
+
+   // Wayfinder Menu active 
+  const currentPath = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll("#primary-menu a");
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+    if (href === currentPath || (currentPath === "" && href === "index.html")) {
+      link.classList.add("active");
+    }
+  });
+ 
