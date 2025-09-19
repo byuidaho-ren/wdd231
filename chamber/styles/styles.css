@@ -353,9 +353,49 @@ svg.icon.grid-icon {
   gap: 15px;
 }
 
+/* Section weather API  */
+
+   /* Base styles */
+    #weather-section {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    .column-weather {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* .left-weather {
+      background-color: #e0f7fa;
+    } */
+
+    /* .right-weather {
+      background-color: #ffe0b2;
+    } */
+
+     .forecast-day {
+          display: flex;
+    border: 1px solid #ccc;
+    background: #FFF;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+  }
+
+
 /* ============================
    MEDIA QUERIES
 ============================ */
+    /* Tablet & Mobile: Stack columns */
+    @media (max-width: 767px) {
+      #weather-section {
+        flex-direction: column;
+      }
+    }
 
 /* Small screens (600px+) */
 @media (min-width: 600px) {
