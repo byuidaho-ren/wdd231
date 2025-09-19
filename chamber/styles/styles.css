@@ -3,8 +3,8 @@
   --primary-color: #078b45;         /* Vibrant Green */
   --secondary-color: #65c18c;       /* Soft Green / Mint */
   --background-color: #f3faf5;      /* Very light greenish-white */
-  --text-color: #1e2e23;            /* Deep greenish-black for readability */
-  --accent-color: #0ba360;          /* Accent green for highlights */
+  --text-color: #1e2e23;            /* Deep greenish-black */
+  --accent-color: #0ba360;          /* Accent green */
   --font-family: 'Roboto', sans-serif;
 }
 
@@ -37,12 +37,11 @@ a:focus {
   border-radius: 4px;
 }
 
-/* active menu wayfinder */
+/* Active menu wayfinder */
 #primary-menu a.active {
-  color: var(--primary-color);;
+  color: var(--primary-color);
   background-color: var(--background-color);
   border-radius: 4px;
- 
 }
 
 .container {
@@ -71,7 +70,6 @@ header {
 }
 
 /* Hamburger Menu */
-
 .hamburger .line {
   transition: all 0.3s ease-in-out;
   transform-origin: center;
@@ -121,7 +119,7 @@ header {
 
 .menu li a:hover,
 .menu li a:focus {
-  background-color: #fff; /* Overwrites previous background-color */
+  background-color: #fff;
   color: var(--primary-color);
   outline: none;
 }
@@ -144,18 +142,7 @@ header {
   margin: 0 !important;
 }
 
-.hero-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 350px;
-  object-fit: cover;
-  object-position: center;
-  z-index: 1;
-}
-
+.hero-img,
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -163,6 +150,15 @@ header {
   width: 100%;
   height: 100%;
   max-height: 350px;
+  object-position: center;
+  z-index: 1;
+}
+
+.hero-img {
+  object-fit: cover;
+}
+
+.hero-overlay {
   background: rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
@@ -214,8 +210,8 @@ header {
 
 /* Main Content */
 main {
- width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
 }
 
 /* Footer */
@@ -229,7 +225,6 @@ footer {
 }
 
 /* Directory Page Lists */
-
 button {
   cursor: pointer;
   border: 1px solid #ddd;
@@ -265,7 +260,7 @@ svg.icon.grid-icon {
   gap: 1rem;
   align-items: center;
   transition: transform 0.2s ease;
-  overflow: auto; /* Replaces article.member-card overflow: scroll */
+  overflow: auto; /* preferred over scroll */
 }
 
 .member-card:hover {
@@ -353,61 +348,53 @@ svg.icon.grid-icon {
   gap: 15px;
 }
 
-/* Section weather API  */
+/* Weather Section */
+#weather-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
 
-   /* Base styles */
-    #weather-section {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      max-width: 1200px;
-    }
+.column-weather {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-    .column-weather {
-      flex: 1;
-      padding: 20px;
-      box-sizing: border-box;
-    }
+.forecast-day {
+  display: flex;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
 
-    /* .left-weather {
-      background-color: #e0f7fa;
-    } */
+#weatherBox {
+  font-size: 26px;
+}
 
-    /* .right-weather {
-      background-color: #ffe0b2;
-    } */
+/* Media Queries */
 
-     .forecast-day {
-          display: flex;
-    border: 1px solid #ccc;
-    background: #FFF;
-    padding: 15px;
-    margin-bottom: 12px;
-    border-radius: 6px;
+/* Mobile (below 768px) */
+@media (max-width: 767px) {
+  #weather-section {
+    flex-direction: column;
   }
-
-
-/* ============================
-   MEDIA QUERIES
-============================ */
-    /* Tablet & Mobile: Stack columns */
-    @media (max-width: 767px) {
-      #weather-section {
-        flex-direction: column;
-      }
-    }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+    width: 85%;
+  }
+}
 
 /* Small screens (600px+) */
 @media (min-width: 600px) {
   .grid-view .member-card {
     width: calc(50% - 1rem);
-  }
-}
-
-/* Medium and larger screens (900px+) */
-@media (min-width: 900px) {
-  .grid-view .member-card {
-    width: calc(33.333% - 1rem);
   }
 }
 
@@ -460,14 +447,9 @@ svg.icon.grid-icon {
   }
 }
 
-/* Mobile (below 768px) */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-    width: 85%;
+/* Medium and larger screens (900px+) */
+@media (min-width: 900px) {
+  .grid-view .member-card {
+    width: calc(33.333% - 1rem);
   }
 }
