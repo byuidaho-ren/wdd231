@@ -530,6 +530,10 @@ svg.icon.grid-icon {
   margin-top: 25px;
 }
 
+#form-errors {
+  color: red; margin-bottom: 1em;
+}
+
 /* Thank you page */
 .container-ty-pg {
   max-width: 600px;
