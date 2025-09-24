@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Renniel D Fernandez | WDD231 Project</title>
+  <meta name="author" content="Renniel D Fernandez">
+  <meta name="description" content="BS in Software Development at BYU–Idaho via BYU Pathway. Passionate about web, mobile, and desktop development.">
+  <meta name="keywords" content="web development, software development, mobile development, desktop development, BYU-Idaho">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://byuidaho-ren.github.io/wdd231/chamber/thankyou.html" />
+  <meta property="og:title" content="Renniel D Fernandez | WDD231 Project" />
+  <meta property="og:description" content="Learn more about Renniel D Fernandez, a passionate software developer." />
+  <meta property="og:image" content="https://byuidaho-ren.github.io/wdd231/chamber/thankyou.html" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Renniel D Fernandez" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://byuidaho-ren.github.io/wdd231/chamber/thankyou.html" />
+  <meta name="twitter:title" content="Renniel D Fernandez | WDD231 Project" />
+  <meta name="twitter:description" content="Learn more about Renniel D Fernandez, a passionate software developer." />
+  <meta name="twitter:image" content="https://byuidaho-ren.github.io/wdd231/chamber/thankyou.html/image.jpg" />
+  <meta name="twitter:site" content="@YourTwitterHandle" />
+  <meta name="twitter:creator" content="@YourTwitterHandle" />
+
+  <!-- Apple Meta Tags -->
+  <meta name="apple-mobile-web-app-title" content="Renniel D Fernandez">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="https://byuidaho-ren.github.io/wdd231/chamber/thankyou.html/apple-touch-icon.png" />
+  <link rel="mask-icon" href="https://byuidaho-ren.github.io/wdd231/chamber/thankyou.html/safari-pinned-tab.svg" color="#5bbad5">
+
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="https://byuidaho-ren.github.io/wdd231/chamber/thankyou.html/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://byuidaho-ren.github.io/wdd231/chamber/thankyou.html" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+</head>
+<body>
+ <div class="container-ty-pg" id="ty-pg-container">
+  <h1 class="h1-ty-pg">Thank You for Joining the Chamber!</h1>
+  <p>Your membership application has been received. Below is a summary of the information you provided:</p>
+
+  <dl class="dl-ty-pg" id="ty-pg-summary">
+    <dt class="dt-ty-pg">First Name:</dt>
+    <dd class="dd-ty-pg" id="ty-pg-firstNameDisplay"></dd>
+
+    <dt class="dt-ty-pg">Last Name:</dt>
+    <dd class="dd-ty-pg" id="ty-pg-lastNameDisplay"></dd>
+
+    <dt class="dt-ty-pg">Email Address:</dt>
+    <dd class="dd-ty-pg" id="ty-pg-emailDisplay"></dd>
+
+    <dt class="dt-ty-pg">Mobile Phone Number:</dt>
+    <dd class="dd-ty-pg" id="ty-pg-mobileDisplay"></dd>
+
+    <dt class="dt-ty-pg">Business/Organization Name:</dt>
+    <dd class="dd-ty-pg" id="ty-pg-businessNameDisplay"></dd>
+
+    <dt class="dt-ty-pg">Application Submitted At:</dt>
+    <dd class="dd-ty-pg" id="ty-pg-timestampDisplay"></dd>
+  </dl>
+
+  <a href="join.html" class="a-ty-pg" id="ty-pg-backLink">Submit Another Application</a>
+</div>
+
+
+  <script>
+// Get URL query parameters
+const params = new URLSearchParams(window.location.search);
+
+// Helper to decode and display value or fallback
+function displayField(id, fieldName) {
+  const value = params.get(fieldName);
+  document.getElementById(id).textContent = value ? decodeURIComponent(value) : 'Not provided';
+}
+
+displayField('ty-pg-firstNameDisplay', 'firstName');
+displayField('ty-pg-lastNameDisplay', 'lastName');
+displayField('ty-pg-emailDisplay', 'email');
+displayField('ty-pg-mobileDisplay', 'mobile');
+displayField('ty-pg-businessNameDisplay', 'businessName');
+displayField('ty-pg-timestampDisplay', 'timestamp');
+
+  </script>
+</body>
+</html>

@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Renniel D Fernandez | WDD231 Project</title>
-  <meta name="author" content="Renniel D Fernandez">
-  <meta name="description" content="BS in Software Development at BYU–Idaho via BYU Pathway. Passionate about web, mobile, and desktop development.">
-  <meta name="keywords" content="web development, software development, mobile development, desktop development, BYU-Idaho">
-  <meta name="robots" content="index, follow">
+  <meta name="author" content="Renniel D Fernandez" />
+  <meta name="description" content="BS in Software Development at BYU–Idaho via BYU Pathway. Passionate about web, mobile, and desktop development." />
+  <meta name="keywords" content="web development, software development, mobile development, desktop development, BYU-Idaho" />
+  <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph / Facebook / LinkedIn -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://byuidaho-ren.github.io/wdd231/chamber/join.html" />
   <meta property="og:title" content="Renniel D Fernandez | WDD231 Project" />
   <meta property="og:description" content="Learn more about Renniel D Fernandez, a passionate software developer." />
-  <meta property="og:image" content="https://byuidaho-ren.github.io/wdd231/chamber/join.html" />
+  <meta property="og:image" content="https://byuidaho-ren.github.io/wdd231/chamber/join.html/image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="Renniel D Fernandez" />
@@ -30,39 +30,35 @@
   <meta name="twitter:site" content="@YourTwitterHandle" />
   <meta name="twitter:creator" content="@YourTwitterHandle" />
 
-  <!-- Apple Meta Tags -->
-  <meta name="apple-mobile-web-app-title" content="Renniel D Fernandez">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <link rel="apple-touch-icon" href="https://byuidaho-ren.github.io/wdd231/chamber/join.html/apple-touch-icon.png" />
-  <link rel="mask-icon" href="https://byuidaho-ren.github.io/wdd231/chamber/join.html/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-title" content="Renniel D Fernandez" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
 
   <!-- Microsoft Tiles -->
-  <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="msapplication-TileImage" content="https://byuidaho-ren.github.io/wdd231/chamber/join.html/mstile-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#2d89ef" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
   <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+  <link rel="icon" href="images/favicon.ico" />
   <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- Canonical Link -->
+  <!-- Canonical -->
   <link rel="canonical" href="https://byuidaho-ren.github.io/wdd231/chamber/join.html" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="styles/styles.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body class="list-view">
-
   <header>
     <div class="nav-wrapper">
       <div class="logo">Cavite Chamber of Commerce</div>
@@ -85,8 +81,67 @@
   </header>
 
   <main class="full-width-container">
-  
+    <section class="container jpg-pg">
+      <div class="container-join">
+        <form method="get" action="thankyou.html" aria-label="Chamber membership application form" class="form-join" id="join-pg-form" novalidate>
+          <div id="form-errors" style="color: red; margin-bottom: 1em;"></div>
 
+          <label for="join-pg-firstName" class="label-join" title="Enter your first name">
+            First Name:
+            <input type="text" id="join-pg-firstName" name="firstName" required autocomplete="given-name" class="input-join" />
+          </label>
+
+          <label for="join-pg-lastName" class="label-join" title="Enter your last name">
+            Last Name:
+            <input type="text" id="join-pg-lastName" name="lastName" required autocomplete="family-name" class="input-join" />
+          </label>
+
+          <label for="join-pg-orgTitle" class="label-join" title="Enter your organizational title (min 7 characters, letters, hyphens, spaces only)">
+            Organizational Title:
+            <input type="text" id="join-pg-orgTitle" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" class="input-join" />
+          </label>
+
+          <label for="join-pg-email" class="label-join" title="Enter your email address">
+            Email Address:
+            <input type="email" id="join-pg-email" name="email" required autocomplete="email" placeholder="example@domain.com" class="input-join" />
+          </label>
+
+          <label for="join-pg-mobile" class="label-join" title="Enter your mobile phone number">
+            Mobile Phone Number:
+            <input type="tel" id="join-pg-mobile" name="mobile" required autocomplete="tel" class="input-join" />
+          </label>
+
+          <label for="join-pg-businessName" class="label-join" title="Enter your business or organization name">
+            Business/Organization Name:
+            <input type="text" id="join-pg-businessName" name="businessName" required autocomplete="organization" class="input-join" />
+          </label>
+
+          <label for="join-pg-membershipLevel" class="label-join" title="Select a membership level">
+            Membership Level:
+            <select id="join-pg-membershipLevel" name="membershipLevel" required class="select-join" title="Choose a membership level">
+              <option value="">-- Select Membership Level --</option>
+              <option value="NP Membership">NP Membership (Non-Profit, No Fee)</option>
+              <option value="Bronze Membership">Bronze Membership</option>
+              <option value="Silver Membership">Silver Membership</option>
+              <option value="Gold Membership">Gold Membership</option>
+            </select>
+          </label>
+
+          <label for="join-pg-description" class="label-join" title="Enter a description of your business or organization">
+            Business/Organization Description:
+            <textarea id="join-pg-description" name="description" rows="4" class="textarea-join"></textarea>
+          </label>
+
+          <input type="hidden" id="join-pg-timestamp" name="timestamp" />
+
+          <input type="submit" value="Submit Membership Application" class="submit-join" />
+        </form>
+
+        <section class="cards-join" aria-label="Membership level information cards" id="join-pg-cards"></section>
+      </div>
+    </section>
+
+    <div id="modals-container"></div>
   </main>
 
   <footer>
@@ -94,6 +149,8 @@
     <p>Last Modified: <span id="last-modified"></span></p>
   </footer>
 
+  <script src="scripts/modal.js" defer></script>
   <script src="scripts/main.js" defer></script>
 </body>
+
 </html>

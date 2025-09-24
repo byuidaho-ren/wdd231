@@ -1,0 +1,34 @@
+[
+  {
+    "id": "join-pg-npModal",
+    "title": "NP Membership Benefits",
+    "description": "No fee membership for non-profit organizations. Includes basic access to chamber events and newsletters."
+  },
+  {
+    "id": "join-pg-bronzeModal",
+    "title": "Bronze Membership Benefits",
+    "list": [
+      "Access to special events",
+      "Basic training sessions",
+      "Advertising on the website"
+    ]
+  },
+  {
+    "id": "join-pg-silverModal",
+    "title": "Silver Membership Benefits",
+    "list": [
+      "All Bronze benefits",
+      "Spotlight advertising on home page",
+      "Discounts on event tickets"
+    ]
+  },
+  {
+    "id": "join-pg-goldModal",
+    "title": "Gold Membership Benefits",
+    "list": [
+      "All Silver benefits",
+      "Exclusive training events",
+      "Premium advertising and sponsorship opportunities"
+    ]
+  }
+]
