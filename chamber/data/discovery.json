@@ -1,0 +1,50 @@
+[
+    {
+    "name": "City Museum",
+    "address": "123 Main St, Cityville",
+    "description": "Explore the history and culture of our vibrant community.",
+    "image": "city-one.webp"
+    },
+    {
+    "name": "Riverside Park",
+    "address": "456 River Rd, Cityville",
+    "description": "A scenic park with walking trails, picnic spots, and playgrounds.",
+    "image": "city-two.jpg"
+    },
+    {
+    "name": "Tech Innovation Center",
+    "address": "789 Innovation Dr, Cityville",
+    "description": "A hub for startups and technology companies.",
+    "image": "city-three.webp"
+    },
+    {
+    "name": "Farmers Market",
+    "address": "101 Market St, Cityville",
+    "description": "Fresh produce and local crafts every Saturday.",
+    "image": "city-four.webp"
+    },
+    {
+    "name": "City Library",
+    "address": "202 Library Ave, Cityville",
+    "description": "Books, study rooms, and community events.",
+    "image": "https://via.placeholder.com/300x200.webp?text=Library"
+    },
+    {
+    "name": "Historic Town Hall",
+    "address": "303 Old Town Rd, Cityville",
+    "description": "Built in 1890, the heart of local governance.",
+    "image": "https://via.placeholder.com/300x200.webp?text=Town+Hall"
+    },
+    {
+    "name": "Mountain Trail",
+    "address": "Mountain Base Camp, Cityville",
+    "description": "Hiking trail with breathtaking views of the region.",
+    "image": "https://via.placeholder.com/300x200.webp?text=Mountain+Trail"
+    },
+    {
+    "name": "Community Arts Center",
+    "address": "404 Art Ln, Cityville",
+    "description": "Gallery space, workshops, and performances year-round.",
+    "image": "https://via.placeholder.com/300x200.webp?text=Arts+Center"
+    }
+]

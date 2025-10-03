@@ -1,11 +1,11 @@
 /* Root colors and fonts */
 :root {
-  --primary-color: #078b45;         /* Vibrant Green */
-  --secondary-color: #65c18c;       /* Soft Green / Mint */
-  --background-color: #f3faf5;      /* Very light greenish-white */
-  --text-color: #1e2e23;            /* Deep greenish-black */
-  --accent-color: #0ba360;          /* Accent green */
-  --font-family: 'Roboto', sans-serif;
+  --primary-color: #078b45; /* Vibrant Green */
+  --secondary-color: #65c18c; /* Soft Green / Mint */
+  --background-color: #f3faf5; /* Very light greenish-white */
+  --text-color: #1e2e23; /* Deep greenish-black */
+  --accent-color: #0ba360; /* Accent green */
+  --font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -332,7 +332,9 @@ svg.icon.grid-icon {
   margin-top: 0.3rem;
 }
 
-.member-level-1 { background: #888; }
+.member-level-1 {
+  background: #888;
+}
 .member-level-2 {
   background: silver;
   color: #222;
@@ -531,7 +533,8 @@ svg.icon.grid-icon {
 }
 
 #form-errors {
-  color: red; margin-bottom: 1em;
+  color: red;
+  margin-bottom: 1em;
 }
 
 /* Thank you page */
@@ -597,6 +600,142 @@ svg.icon.grid-icon {
   cursor: pointer;
 }
 
+main.discovery-main {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.discovery-visit-message {
+  background: #eef7ff;
+  border-left: 4px solid #007acc;
+  padding: 1rem;
+}
+
+.discovery-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background: #fff;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "address"
+    "description"
+    "button";
+}
+
+.discovery-card h2 {
+  grid-area: title;
+}
+
+.discovery-card figure {
+  grid-area: image;
+  margin: 0;
+}
+
+.discovery-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.discovery-card address {
+  grid-area: address;
+  font-style: normal;
+  margin: 0.5rem 0;
+}
+
+.discovery-card p {
+  grid-area: description;
+}
+
+.discovery-card button {
+  grid-area: button;
+  padding: 0.5rem 1rem;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.discovery-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.discovery-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background: #fff;
+}
+
+/* Assign each card to a named area */
+.discovery-area1 {
+  grid-area: area1;
+}
+.discovery-area2 {
+  grid-area: area2;
+}
+.discovery-area3 {
+  grid-area: area3;
+}
+.discovery-area4 {
+  grid-area: area4;
+}
+.discovery-area5 {
+  grid-area: area5;
+}
+.discovery-area6 {
+  grid-area: area6;
+}
+.discovery-area7 {
+  grid-area: area7;
+}
+.discovery-area8 {
+  grid-area: area8;
+}
+
+/* Small screen: 1 column */
+@media (max-width: 640px) {
+  .discovery-grid {
+    grid-template-areas:
+      "area1"
+      "area2"
+      "area3"
+      "area4"
+      "area5"
+      "area6"
+      "area7"
+      "area8";
+  }
+}
+
+/* Medium screen: 2 columns */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discovery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "area1 area2"
+      "area3 area4"
+      "area5 area6"
+      "area7 area8";
+  }
+}
+
+/* Large screen: 4 cards in 2 rows */
+@media (min-width: 1025px) {
+  .discovery-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "area1 area2 area3 area4"
+      "area5 area6 area7 area8";
+  }
+}
 
 /* Media Queries */
 
